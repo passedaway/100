@@ -1,0 +1,63 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+BITMAP_LEN	bitmap.h	5;"	d
+CFG_USE_BITMAP	Makefile	/^CFG_USE_BITMAP ?= 1$/;"	m
+CFG_USE_QUEUE	Makefile	/^CFG_USE_QUEUE ?= 0$/;"	m
+CFG_USE_TREE	Makefile	/^CFG_USE_TREE ?= 0$/;"	m
+END	main.c	62;"	d	file:
+GEN_LEN	main.c	22;"	d	file:
+MAP_FUNC_t	tree.h	/^typedef int (*MAP_FUNC_t)(tree_t*, unsigned int *data);$/;"	t
+OBJS	Makefile	/^OBJS = generate.o$/;"	m
+QUEUE_H	queue.h	2;"	d
+START	main.c	61;"	d	file:
+TREE_H	tree.h	19;"	d
+_BITMAP_	bitmap.h	2;"	d
+bitmap_creat	bitmap.c	/^void bitmap_creat(unsigned long long max_length)$/;"	f
+bitmap_destroy	bitmap.c	/^void bitmap_destroy()$/;"	f
+bitmap_get	bitmap.c	/^int bitmap_get(unsigned long long offs, int *isIn)$/;"	f
+bitmap_getstr	bitmap.c	/^int bitmap_getstr(char *str, int *isIn)$/;"	f
+bitmap_set	bitmap.c	/^int bitmap_set(unsigned long long offs)$/;"	f
+bitmap_setstr	bitmap.c	/^int bitmap_setstr(char *str)$/;"	f
+bitmap_t	bitmap.c	/^}bitmap_t;$/;"	t	typeref:struct:__anon1	file:
+bm	bitmap.c	/^static bitmap_t bm = {0, 0ULL};$/;"	v	file:
+data	bitmap.c	/^	unsigned char *data;$/;"	m	struct:__anon1	file:
+data	main.c	/^char data[GEN_LEN][13];$/;"	v
+data	queue.h	/^	char *data;$/;"	m	struct:ele_s
+data	tree.h	/^		char *data;$/;"	m	struct:node_s::__anon2
+data	tree.h	/^	}data;$/;"	m	struct:node_s	typeref:struct:node_s::__anon2
+dq	main.c	/^queue_t dq = {&dq, &dq};$/;"	v
+ele_s	queue.h	/^typedef struct ele_s{$/;"	s
+ele_t	queue.h	/^}ele_t;$/;"	t	typeref:struct:ele_s
+gen_data	generate.c	/^int gen_data(const char *filename, unsigned long long len)$/;"	f
+index	tree.h	/^	int index;$/;"	m	struct:node_s
+len	bitmap.c	/^	unsigned long long len;$/;"	m	struct:__anon1	file:
+main	generate.c	/^int main(void)$/;"	f
+main	main.c	/^int main(int argc, char **argv)$/;"	f
+next	queue.h	/^	struct queue_s *next;$/;"	m	struct:queue_s	typeref:struct:queue_s::queue_s
+next	tree.h	/^	struct node_s *next;$/;"	m	struct:node_s	typeref:struct:node_s::node_s
+node_s	tree.h	/^typedef struct node_s{$/;"	s
+node_t	tree.h	/^}node_t;$/;"	t	typeref:struct:node_s
+prev	queue.h	/^	struct queue_s *prev;$/;"	m	struct:queue_s	typeref:struct:queue_s::queue_s
+q_count	queue.c	/^int q_count(queue_t *ql)$/;"	f
+q_deq	queue.c	/^void q_deq(queue_t *item)$/;"	f
+q_enq	queue.c	/^void q_enq(queue_t *ql, queue_t *item)$/;"	f
+q_enq_byorder	queue.c	/^int q_enq_byorder(queue_t *ql, queue_t *item)$/;"	f
+qb	queue.h	/^	queue_t qb;$/;"	m	struct:ele_s
+queue_s	queue.h	/^typedef struct queue_s{$/;"	s
+queue_t	queue.h	/^}queue_t;$/;"	t	typeref:struct:queue_s
+root	tree.h	/^	node_t *root;$/;"	m	struct:tree_s
+str2ll	bitmap.c	/^unsigned long long str2ll(const char *s)$/;"	f
+subnode	tree.h	/^	struct node_s *subnode[10];$/;"	m	struct:node_s	typeref:struct:node_s::node_s
+subnode_creat	tree.c	/^static node_t* subnode_creat(int level)$/;"	f	file:
+subnode_destroy	tree.c	/^static void subnode_destroy(node_t *subnode)$/;"	f	file:
+tree	main.c	/^tree_t *tree;$/;"	v
+tree_creat	tree.c	/^tree_t* tree_creat(int level)$/;"	f
+tree_destroy	tree.c	/^void tree_destroy(tree_t *tree)$/;"	f
+tree_en	tree.c	/^int tree_en(tree_t *tree, char *data)$/;"	f
+tree_map	tree.c	/^int tree_map(tree_t *tree, MAP_FUNC_t map_func)$/;"	f
+tree_s	tree.h	/^typedef struct tree_s{$/;"	s
+tree_t	tree.h	/^}tree_t;$/;"	t	typeref:struct:tree_s
